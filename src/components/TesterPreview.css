@@ -1,0 +1,151 @@
+
+.tester-preview {
+    width: 700px;
+    height: 450px;
+    border: 2px solid #898ebd;
+    border-radius: 20px;
+    margin-right:90px;
+    margin-top:60px;
+    transform: rotate(3deg);
+    background: #17182d;
+    padding: 10px;
+}
+
+/* Top three circles */
+.circles {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0 15px 10px;
+}
+
+/* Main two-column layout */
+.tester-preview-content {
+    height:370px;
+    display: flex;
+    width: 100%;
+    
+    background: rgba(9, 12, 30, 0.92);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Left panel */
+.tester-preview-regex {
+    height:370px;
+    width: 50%;
+    padding: 15px;
+    border-right: 1px solid #343858;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Heading with icon */
+.preview-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.preview-heading svg {
+    color: #a66bff;
+}
+
+/* Regex input */
+.regex-input {
+    padding: 12px;
+    background: #1b203b;
+    border: 1px solid #343858;
+    border-radius: 9px;
+    color: white;
+    font-size: 15px;
+}
+
+/* Test string */
+.test-string {
+    min-height: 90px;
+    padding: 12px;
+    background: #1b203b;
+    border: 1px solid #343858;
+    border-radius: 9px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Flags */
+.regex-flags {
+    display: flex;
+    gap: 8px;
+    margin-top: 2px;
+}
+
+.flag {
+    flex: 1;
+    text-align: center;
+    padding: 6px;
+    border-radius: 20px;
+    background: #252943;
+    color: #c5c8dc;
+    font-size: 13px;
+}
+
+.flag.active {
+    background: #2165ff;
+    color: white;
+}
+
+/* Test button */
+.test-regex-btn {
+    padding: 12px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 9px;
+    background: linear-gradient(100deg, #a020f0, #268bff);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Right panel */
+.tester-preview-result {
+    height:370px;
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Result message */
+.result-message {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px;
+    border-radius: 9px;
+    background: #193b3a;
+    color: #b5f5d3;
+    font-size: 14px;
+}
+
+.result-message svg {
+    color: #4ade80;
+}
+
+/* Highlighted result text */
+.result-text {
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.result-text span {
+    background: #7540bd;
+    border-radius: 4px;
+    padding: 2px 4px;
+}

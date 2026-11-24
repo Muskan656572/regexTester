@@ -1,0 +1,18 @@
+import React from 'react'
+import './Card.css'
+function Card(props) {
+  return (
+    <div className="feature-card">
+      <div className="feature-icon">
+        {props.logo}
+      </div>
+
+      <div className="feature-info">
+        <h3>{props.title}</h3>
+        <p>{props.text}</p>
+      </div>
+    </div>
+  )
+}
+
+export default Card

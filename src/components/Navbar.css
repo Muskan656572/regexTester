@@ -1,0 +1,71 @@
+.gradient-text {
+  background: linear-gradient(100deg, #a020f0, #6745ff, #268bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 94px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #242641;
+  background: rgba(9, 12, 30, 0.92);
+  position: relative;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 27px;
+  font-weight: 800;
+  white-space: nowrap;  /* prevents the text from wrapping to the next line */
+}
+
+.logo-symbol {
+  font-size: 43px;
+  font-weight: 800;
+  letter-spacing: -5px;
+  color: #a33bff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 23px;
+  border-radius: 35px;
+  color: #d3d5e8;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: linear-gradient(110deg, #7019d9, #4220a7);
+  color: white;
+  box-shadow: 0 0 20px #7525dc55;
+}
+
+.theme-toggle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #252744;
+  background: #151831;
+  color: white;
+  display: grid;
+  place-items: center; /* centers the icon */
+}

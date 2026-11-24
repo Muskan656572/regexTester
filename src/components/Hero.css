@@ -1,0 +1,109 @@
+.hero{
+    background-color: rgba(9, 12, 30, 0.92);
+    height: 600px;
+    display: flex;
+    
+    text-align: center;
+}
+.hero-content{
+    margin-top:70px;
+    width: 850px;
+    
+    /* background-color: rgba(158, 168, 224, 0.92); */
+}
+.hero-title{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #39305e;
+    border-radius: 30px;
+    background: #17132f;
+    color: #c4a5ff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left:-340px;
+}
+.hero-heading{
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    margin-left: -150px
+    
+}
+.hero-heading-highlight{
+    background: linear-gradient(100deg, #a020f0, #6745ff, #268bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.hero-description{
+    font-size: 23px;
+    margin-left: -10px;
+    margin-top: -10px;
+    max-width: 600px;
+    line-height:2;
+    /* white-space: wrap; */
+}
+.hero-description-text1{
+    font-size: 23px;
+    margin-left: 41px;
+    margin-top: -10px;
+    max-width: 600px;
+    /* white-space: wrap; */
+}
+.hero-description-text2{
+    font-size: 23px;
+    margin-left: -57px;
+    margin-top: -10px;
+    max-width: 600px;
+    line-height: 1.5;
+    /* white-space: wrap; */
+}
+.hero-points{
+   
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.hero-point-text{
+    font-size: 18px;
+}
+.hero-buttons {
+    margin-top: 30px;
+    margin-left: -200px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+.primary-btn {
+  background: linear-gradient(110deg, #8b2be2, #4d36d8);
+  color: white;
+}
+
+.secondary-btn {
+  background: #171a35;
+  color: white;
+  border: 1px solid #343858;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+

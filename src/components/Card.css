@@ -1,0 +1,50 @@
+
+.feature-card {
+    flex: 1;
+    min-width: 0;
+    min-height: 85px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: linear-gradient(
+        120deg,
+        #171a35,
+        #15172f
+    );
+
+    border: 1px solid #292e50;
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #6545a8;
+    box-shadow: 0 8px 25px #00000040;
+}
+
+/* Icon styling */
+.feature-icon {
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text styling */
+.feature-info h3 {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    white-space: nowrap;
+}
+
+.feature-info p {
+    color: #c5c8dc;
+    font-size: 12px;
+    line-height: 1.6;
+}
