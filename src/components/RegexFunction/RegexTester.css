@@ -1,0 +1,7 @@
+.regex-workspace {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  align-items: stretch;
+  margin-bottom: 20px;
+}

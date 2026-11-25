@@ -1,8 +1,11 @@
 import React from 'react'
+import {useState} from "react"
 import TesterPreview from './TesterPreview'
+import {Link} from "react-router-dom"
 import Card from './Card'
 import './Hero.css'
 function Hero () {
+    
   return (
     <section className = "hero">
         <div className="hero-content">
@@ -43,10 +46,8 @@ function Hero () {
             </div>
 
             <div className="hero-buttons">
-                <button className="primary-btn">
-                    Start Testing →
-                </button>
-
+                
+                <Link to="/regexTest" className="primary-btn" >Start Testing → </Link>
                 <button className="secondary-btn">
                     Explore Examples
                 </button>

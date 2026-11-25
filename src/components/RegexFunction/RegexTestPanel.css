@@ -1,0 +1,126 @@
+
+.regex-tester {
+  flex: 1.3;
+  margin-left: 60px;
+  min-width: 0;
+  padding: 16px;
+  background: #11132f;
+  border: 1px solid #393078;
+  border-radius: 14px;
+  box-shadow: 0 0 15px #4f46e522;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.heading-title,
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a855f7;
+}
+
+.heading-title h3,
+.section-heading h3 {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+.clear-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #211d46;
+  border: 1px solid #393078;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.pattern-input,
+.test-string-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #10122d;
+  border: 1px solid #393078;
+  border-radius: 9px;
+  padding: 10px 12px;
+  color: white;
+  outline: none;
+  font-size: 13px;
+}
+
+.pattern-input::placeholder,
+.test-string-input::placeholder {
+  color: #9297c0;
+}
+
+.pattern-input:focus,
+.test-string-input:focus {
+  border-color: #8b5cf6;
+}
+
+.section-heading {
+  margin: 16px 0 10px;
+}
+
+.flags-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.flag-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 7px 3px;
+  background: #1b1941;
+  border: 1px solid #44358d;
+  border-radius: 11px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.flag-item strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.flag-item span {
+  font-size: 9px;
+  color: #c4c5df;
+  text-align: center;
+}
+
+.test-string-input {
+  min-height: 45px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.test-regex-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 11px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(100deg, #792bea, #526dff);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}

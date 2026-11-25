@@ -1,12 +1,35 @@
-
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import './App.css'
 import Home from './pages/Home'
+import RegexTest from './pages/RegexTest'
+
+const router = createBrowserRouter( [
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/home",
+    element: <Home />
+  },
+  // {
+  //   path: "/about",
+  //   element: <About />
+  // },
+  {path: "/regexTest",
+  element: <RegexTest/>
+  }
+
+]);
 function App() {
   
 
   return (
     <>
-      <Home />
+      <RouterProvider router = {router}>
+        
+      </RouterProvider>
+      
       
     </>
   )
