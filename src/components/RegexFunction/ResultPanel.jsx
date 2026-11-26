@@ -7,18 +7,29 @@ import {
 
 import "./ResultPanel.css";
 
-function ResultsPanel() {
+function ResultsPanel(props) {
   return (
     <div className="results-panel">
 
       {/* Results Heading */}
       <div className="results-heading">
         <ChartNoAxesColumn size={21} />
-        <h3>Results</h3>
+        <h3>Results ({props.results.length})</h3>
       </div>
 
       {/* Results Content */}
-      <div className="results-content">
+
+      {props.results.length > 0 && (
+      <div className="matches-container">
+        {props.results.map((match, index) => (
+          <div className="match-item" key={index}>
+            <span>Match {index + 1}</span>
+            <strong>{match[0]}</strong>
+          </div>
+        ))}
+      </div>
+    )}
+      {props.results.length == 0 && !props.error && (  <div className="results-content">
 
         <div className="results-illustration">
           <div className="search-lines">
@@ -39,6 +50,14 @@ function ResultsPanel() {
         </p>
 
       </div>
+  )}
+
+      {props.error && (
+      <div className="regex-error">
+        <strong>Invalid Regex!</strong>
+        <p>{props.error}</p>
+      </div>
+    )}
 
     </div>
   );

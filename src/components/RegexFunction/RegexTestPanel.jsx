@@ -1,6 +1,7 @@
 import React from 'react'
 import { Workflow, Trash2, Flag, FileText, Play } from "lucide-react";
 import './RegexTestPanel.css'
+
 function RegexTestPanel(props) {
   const toggleFlag= (flag) => {
           if ( props.selectedFlags.includes(flag)) {
@@ -76,11 +77,11 @@ function RegexTestPanel(props) {
               <span>Unicode</span>
             </div>
     
-            <div className={`flag-item ${props.selectedFlags.includes('y') ? 'active' : ''}`}
+            {/* <div className={`flag-item ${props.selectedFlags.includes('y') ? 'active' : ''}`}
             onClick={ () => toggleFlag('y')}>
               <strong>y</strong>
               <span>Sticky</span>
-            </div>
+            </div> */}
     
           </div>
     
@@ -98,7 +99,8 @@ function RegexTestPanel(props) {
           />
     
           {/* Test Button */}
-          <button className="test-regex-btn">
+          <button className="test-regex-btn"
+          onClick={props.testRegex}>
             <Play size={16} fill="white" />
             Test Regex
           </button>
