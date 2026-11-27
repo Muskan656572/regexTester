@@ -1,0 +1,35 @@
+.feature-card {
+    height: 105px;
+    width: 300px;
+    box-sizing: border-box;
+    flex: none;
+    border-radius: 16px;
+    background: #171638;
+    border: 1px solid #34316a;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+.feature-card-icon {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #08091f;
+}
+.feature-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white
+}
+.feature-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

@@ -2,32 +2,33 @@ import React from 'react'
 import './Navbar.css'
 import { useState } from 'react'
 import { Home, Info, Code2, Lightbulb, Moon,Sun } from 'lucide-react'
+import { Link } from 'react-router-dom'
 function Navbar() {
 
     const [darkMode, setDarkMode] = useState(true)
   return (
     <nav className="navbar">
 
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <span className="logo-symbol">/R/</span>
           <span>Regex <span className="gradient-text">Tester</span></span>
-        </a>
+        </Link>
 
         <div className="nav-links">
-            <a href="#home" className="nav-link active">
+            <Link to="/home" className="nav-link active">
                 <Home size={19} /> Home
-            </a>
-            <a href="#about" className="nav-link">
+            </Link>
+            <Link to="/about" className="nav-link">
                 <Info size={19} /> About
-            </a>
+            </Link>
 
-            <a href="#examples" className="nav-link">
+            <Link to="/examples" className="nav-link">
             <Code2 size={20} /> Examples
-            </a>
+            </Link>
 
-            <a href="#tips" className="nav-link">
+            <Link to="#tips" className="nav-link">
             <Lightbulb size={20} /> Tips
-            </a>
+            </Link>
         </div>
 
       <button

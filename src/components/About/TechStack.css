@@ -1,0 +1,122 @@
+
+.tech-stack {
+    width: calc(100% - 90px);
+    min-height: 100px;
+    margin: 0 45px 30px;
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    background: #08091f;
+    border: 1px solid #8b5cf6;
+    border-radius: 22px;
+    box-sizing: border-box;
+}
+
+/* Left Heading */
+
+.tech-stack-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.stack-icon {
+    color: #a855f7;
+    filter: drop-shadow(0 0 8px #8b5cf6);
+}
+
+.tech-stack-heading h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0 0 5px;
+}
+
+.tech-stack-heading h2 span {
+    color: #a855f7;
+}
+
+.tech-stack-heading p {
+    color: #c4c4df;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Technology Badges */
+
+.tech-stack-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tech-item {
+    min-width: 100px;
+    height: 55px;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid #34316a;
+    border-radius: 30px;
+    background: #11112f;
+
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tech-logo {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* React */
+
+.react-logo {
+    color: #00d8ff;
+    font-size: 32px;
+}
+
+/* Vite */
+
+.vite-logo {
+    color: #b84cff;
+    font-size: 38px;
+}
+
+/* JavaScript */
+
+.js-logo {
+    background: #f7df1e;
+    color: #111;
+    font-size: 17px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+/* CSS */
+
+.css-logo {
+    background: #1572b6;
+    color: white;
+    font-size: 22px;
+    clip-path: polygon(0 0, 100% 0, 85% 85%, 50% 100%, 15% 85%);
+}
+
+

@@ -2,7 +2,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import './App.css'
 import Home from './pages/Home'
 import RegexTest from './pages/RegexTest'
-
+import About from './pages/About'
 const router = createBrowserRouter( [
   {
     path: "/",
@@ -12,10 +12,10 @@ const router = createBrowserRouter( [
     path: "/home",
     element: <Home />
   },
-  // {
-  //   path: "/about",
-  //   element: <About />
-  // },
+  {
+    path: "/about",
+    element: <About />
+  },
   {path: "/regexTest",
   element: <RegexTest/>
   }
