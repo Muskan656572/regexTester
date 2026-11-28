@@ -1,7 +1,18 @@
 import React from 'react'
 import {Copy, Play} from 'lucide-react'
 import './TipCard.css'
+import {useNavigate} from 'react-router-dom'
 function TipCard(props) {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/regexTest', {
+      state: {
+        pattern: props.tip.pattern,
+        sampleText: props.tip.sampleText
+      }
+    });
+  } 
   return (
     <div className="tip-card">
       <props.tip.icon size={32} className="tip-icon" />
@@ -18,12 +29,13 @@ function TipCard(props) {
       </div>
 
       <button className="copy-button">
-        <Copy size={20} />
-        Copy
+        <Copy size={20} className="button-icon" />
+        <span className="button-text">Copy</span>
       </button>
-      <button className="try-in-tester">
-        <Play size={20} />
-        Try in Rester
+      <button className="try-in-tester"
+        onClick={handleClick}>
+        <Play size={20} className="button-icon" />
+        <span className="button-text">Try in Tester</span>
       </button>
 
     </div>

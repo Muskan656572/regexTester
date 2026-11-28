@@ -114,3 +114,13 @@
     height: 40px;
     padding: 0 12px;
 }
+.button-icon{
+    margin-right: 8px;
+    margin-top: 4px;
+}
+.button-text{
+    left: -2px;
+    position: relative;
+    top: -4px;
+
+}
