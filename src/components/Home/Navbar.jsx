@@ -26,7 +26,7 @@ function Navbar() {
             <Code2 size={20} /> Examples
             </Link>
 
-            <Link to="#tips" className="nav-link">
+            <Link to="/tips" className="nav-link">
             <Lightbulb size={20} /> Tips
             </Link>
         </div>

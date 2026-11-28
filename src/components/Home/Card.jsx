@@ -2,8 +2,8 @@ import React from 'react'
 import './Card.css'
 function Card(props) {
   return (
-    <div className="feature-card">
-      <div className="feature-icon">
+    <div className="feature-card1">
+      <div className="feature-icon1">
         {props.logo}
       </div>
 

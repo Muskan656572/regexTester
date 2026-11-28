@@ -15,7 +15,7 @@ function RegexTester() {
       const flags = selectedFlags.join('');
       const regex = new RegExp(regexPattern, flags);
       const matches = [...testString.matchAll(regex)];
-      console.log(matches);
+      
       setResults(matches);
       setError('');
     }

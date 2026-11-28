@@ -1,0 +1,116 @@
+.tip-card {
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 22px;
+    border-radius: 18px;
+
+    background: linear-gradient(
+        120deg,
+        #171638,
+        #11122f
+    );
+
+    border: 1px solid #49308e;
+
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.12);
+
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.tip-card:hover {
+    transform: translateY(-4px);
+    border-color: #9333ea;
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.25);
+}
+
+/* Icon */
+.tip-card > svg {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+
+    width: 55px;
+    height: 55px;
+    padding: 12px;
+    box-sizing: border-box;
+
+    color: #c084fc;
+    background: #0b0b25;
+    border-radius: 50%;
+}
+
+/* Title */
+.tip-card h3 {
+    margin: 0 0 8px 72px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Description */
+.tip-card p {
+    margin: 0 0 15px 72px;
+    color: #d0cce8;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Rules Container */
+.tip-rules {
+    margin-top: 12px;
+    padding: 10px 12px;
+
+    background: #11112d;
+    border: 1px solid #292653;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Individual Rule */
+.tip-rule {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    align-items: center;
+    gap: 8px;
+
+    color: #d8d4ed;
+    font-size: 12px;
+}
+
+/* Regex Symbols */
+.tip-rule strong {
+    color: #e9d5ff;
+    font-size: 13px;
+    font-weight: 600;
+}
+.copy-button{
+    position: absolute;
+    bottom: 14px;
+    right: 190px;
+    border: 1px solid #49308e;
+    border-radius: 20px;
+    background: #0b0b25;
+    color: #c084fc;
+    width: 120px;
+    height: 40px;
+    padding: 0 12px;
+}
+.try-in-tester{
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    border: 1px solid #49308e;
+    border-radius: 20px;
+    background: #0b0b25;
+    color: #c084fc;
+    width: 170px;
+    height: 40px;
+    padding: 0 12px;
+}

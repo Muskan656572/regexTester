@@ -1,0 +1,79 @@
+.tips-header { 
+    display: flex;
+    height: 240px;
+    width: 100%;
+    background: rgba(9, 12, 30, 0.92);
+}
+.tips-header-icon{
+    height:200px;
+    width:200px;
+    position: relative;
+    /* background:darkkhaki; */
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.tips-icon1{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    color:blueviolet;
+    
+}
+.tips-icon2{
+    position: absolute;
+    top: 27%;
+    left: 39%;
+    stroke-width: 3px;
+}
+.tips-header-text{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.tips-header-text h1{
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+}
+.tips-header-text h1 span{
+    background: linear-gradient(180deg, #9333ea, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tips-header-text p{
+    color: #b7c1e9;
+    line-height: 2.3;
+    font-size: 20px;
+}
+.tips-header-aside {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height:100px;
+    width:400px;
+    margin-top: 90px;
+    margin-left: 50px;
+    
+    padding: 18px 28px;
+
+    border: 2px solid #6d28d9;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        110deg,
+        #211052,
+        #321078,
+        #4c0d9e
+    );
+
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, 0.3),
+        inset 0 0 15px rgba(139, 92, 246, 0.15);
+}
+
+.tagline-rocket {
+    font-size: 27px;
+}

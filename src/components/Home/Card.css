@@ -1,5 +1,5 @@
 
-.feature-card {
+.feature-card1 {
     flex: 1;
     min-width: 0;
     min-height: 85px;
@@ -20,14 +20,14 @@
     transition: all 0.3s ease;
 }
 
-.feature-card:hover {
+.feature-card1:hover {
     transform: translateY(-5px);
     border-color: #6545a8;
     box-shadow: 0 8px 25px #00000040;
 }
 
 /* Icon styling */
-.feature-icon {
+.feature-icon1 {
     min-width: 40px;
     display: flex;
     align-items: center;
